@@ -67,3 +67,29 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+doctrine_phpcr:
+   # configure the PHPCR session
+   session:
+       backend:
+          type: doctrinedbal
+          connection: default
+       workspace: default
+       username: admin
+       password: admin
+   # enable the ODM layer
+   odm:
+       auto_mapping: true
+       auto_generate_proxy_classes: %kernel.debug%
+
+cmf_routing:
+    chain:
+        routers_by_id:
+            cmf_routing.dynamic_router: 20
+            router.default: 100
+    dynamic:
+        enabled: true
+        persistence:
+            phpcr:
+                route_basepath: /cms/routes
+        generic_controller: \ConcertoCms\FrontBundle\Controller\DefaultController::pageAction
