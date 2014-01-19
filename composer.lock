@@ -3,8 +3,67 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2c0295f7b959d7cc894ee1a78d4f3b41",
+    "hash": "e8447943ad21d609cff0eab8b294e48e",
     "packages": [
+        {
+            "name": "concerto-cms/core-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/concerto-cms/CoreBundle.git",
+                "reference": "4262a0cb6e9527a6bdcaefb0b6f5baad92a40448"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/concerto-cms/CoreBundle/zipball/4262a0cb6e9527a6bdcaefb0b6f5baad92a40448",
+                "reference": "4262a0cb6e9527a6bdcaefb0b6f5baad92a40448",
+                "shasum": ""
+            },
+            "type": "library",
+            "authors": [
+                {
+                    "name": "Mathieu Maes",
+                    "email": "mathieu@webberig.be"
+                }
+            ],
+            "description": "Core features for the Concerto CMS software",
+            "support": {
+                "source": "https://github.com/concerto-cms/CoreBundle/tree/master",
+                "issues": "https://github.com/concerto-cms/CoreBundle/issues"
+            },
+            "time": "2014-01-19 19:44:03"
+        },
+        {
+            "name": "concerto-cms/front-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/concerto-cms/FrontBundle.git",
+                "reference": "192d7c3ac02a8d6814ee98e02db8e2f287b82ee7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/concerto-cms/FrontBundle/zipball/192d7c3ac02a8d6814ee98e02db8e2f287b82ee7",
+                "reference": "192d7c3ac02a8d6814ee98e02db8e2f287b82ee7",
+                "shasum": ""
+            },
+            "type": "library",
+            "license": [
+                "GPL v2"
+            ],
+            "authors": [
+                {
+                    "name": "Mathieu Maes",
+                    "email": "mathieu@webberig.be"
+                }
+            ],
+            "description": "Base template of the Concerto CMS",
+            "support": {
+                "source": "https://github.com/concerto-cms/FrontBundle/tree/master",
+                "issues": "https://github.com/concerto-cms/FrontBundle/issues"
+            },
+            "time": "2014-01-19 19:41:15"
+        },
         {
             "name": "doctrine/annotations",
             "version": "v1.1.2",
@@ -1210,17 +1269,17 @@
         },
         {
             "name": "symfony/monolog-bundle",
-            "version": "v2.4.1",
+            "version": "v2.5.0",
             "target-dir": "Symfony/Bundle/MonologBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/MonologBundle.git",
-                "reference": "e81c2e9c4dc0a9ff794674017069e036f575f278"
+                "reference": "29a17a347dfc41aed34ce9b72cceaf375635c408"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/MonologBundle/zipball/e81c2e9c4dc0a9ff794674017069e036f575f278",
-                "reference": "e81c2e9c4dc0a9ff794674017069e036f575f278",
+                "url": "https://api.github.com/repos/symfony/MonologBundle/zipball/29a17a347dfc41aed34ce9b72cceaf375635c408",
+                "reference": "29a17a347dfc41aed34ce9b72cceaf375635c408",
                 "shasum": ""
             },
             "require": {
@@ -1238,7 +1297,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4.x-dev"
+                    "dev-master": "2.5.x-dev"
                 }
             },
             "autoload": {
@@ -1266,7 +1325,7 @@
                 "log",
                 "logging"
             ],
-            "time": "2013-08-26 10:15:04"
+            "time": "2014-01-19 13:23:40"
         },
         {
             "name": "symfony/swiftmailer-bundle",
@@ -1540,9 +1599,10 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "concerto-cms/front-bundle": 20,
+        "concerto-cms/core-bundle": 20
+    },
     "platform": {
         "php": ">=5.3.3"
     },
