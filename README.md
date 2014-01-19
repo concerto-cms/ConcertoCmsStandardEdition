@@ -1,4 +1,4 @@
-ConcertoCmsStandardEdition
+Concerto Cms
 ==========================
 
 Standard installation of the Concerto CMS
