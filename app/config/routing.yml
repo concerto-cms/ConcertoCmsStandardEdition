@@ -1,0 +1,3 @@
+concerto_cms_core:
+    resource: "@ConcertoCmsCoreBundle/Resources/config/routing.yml"
+    prefix:   "%webapp_path%"

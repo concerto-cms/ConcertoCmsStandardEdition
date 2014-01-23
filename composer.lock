@@ -3,20 +3,21 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e8447943ad21d609cff0eab8b294e48e",
+    "hash": "847be0281555ecb40289b446489f09a5",
     "packages": [
         {
             "name": "concerto-cms/core-bundle",
             "version": "dev-master",
+            "target-dir": "ConcertoCms/CoreBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/concerto-cms/CoreBundle.git",
-                "reference": "0a9504a5c7e82155d7bd7cb9f1925bc8ca8c0ff5"
+                "reference": "602c79ec9c95851e822f07db3319321ff1a7f689"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concerto-cms/CoreBundle/zipball/0a9504a5c7e82155d7bd7cb9f1925bc8ca8c0ff5",
-                "reference": "0a9504a5c7e82155d7bd7cb9f1925bc8ca8c0ff5",
+                "url": "https://api.github.com/repos/concerto-cms/CoreBundle/zipball/602c79ec9c95851e822f07db3319321ff1a7f689",
+                "reference": "602c79ec9c95851e822f07db3319321ff1a7f689",
                 "shasum": ""
             },
             "require": {
@@ -27,6 +28,11 @@
                 "symfony-cmf/routing-bundle": "1.1.0"
             },
             "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ConcertoCms\\CoreBundle": ""
+                }
+            },
             "authors": [
                 {
                     "name": "Mathieu Maes",
@@ -38,23 +44,29 @@
                 "source": "https://github.com/concerto-cms/CoreBundle/tree/master",
                 "issues": "https://github.com/concerto-cms/CoreBundle/issues"
             },
-            "time": "2014-01-19 20:18:17"
+            "time": "2014-01-23 18:50:39"
         },
         {
             "name": "concerto-cms/front-bundle",
             "version": "dev-master",
+            "target-dir": "ConcertoCms/FrontBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/concerto-cms/FrontBundle.git",
-                "reference": "192d7c3ac02a8d6814ee98e02db8e2f287b82ee7"
+                "reference": "12984fb0152dc2727e73b8ccde0e62a6a912f047"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concerto-cms/FrontBundle/zipball/192d7c3ac02a8d6814ee98e02db8e2f287b82ee7",
-                "reference": "192d7c3ac02a8d6814ee98e02db8e2f287b82ee7",
+                "url": "https://api.github.com/repos/concerto-cms/FrontBundle/zipball/12984fb0152dc2727e73b8ccde0e62a6a912f047",
+                "reference": "12984fb0152dc2727e73b8ccde0e62a6a912f047",
                 "shasum": ""
             },
             "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ConcertoCms\\FrontBundle": ""
+                }
+            },
             "license": [
                 "GPL v2"
             ],
@@ -69,7 +81,7 @@
                 "source": "https://github.com/concerto-cms/FrontBundle/tree/master",
                 "issues": "https://github.com/concerto-cms/FrontBundle/issues"
             },
-            "time": "2014-01-19 19:41:15"
+            "time": "2014-01-23 18:51:50"
         },
         {
             "name": "doctrine/annotations",
@@ -1781,20 +1793,21 @@
         },
         {
             "name": "symfony/icu",
-            "version": "v1.0.0",
+            "version": "v1.2.0",
             "target-dir": "Symfony/Component/Icu",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Icu.git",
-                "reference": "cac3fdfb111adbe590155f491594636d45129783"
+                "reference": "7299cd3d8d6602103d1ebff5d0a9917b7bc6de72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Icu/zipball/cac3fdfb111adbe590155f491594636d45129783",
-                "reference": "cac3fdfb111adbe590155f491594636d45129783",
+                "url": "https://api.github.com/repos/symfony/Icu/zipball/7299cd3d8d6602103d1ebff5d0a9917b7bc6de72",
+                "reference": "7299cd3d8d6602103d1ebff5d0a9917b7bc6de72",
                 "shasum": ""
             },
             "require": {
+                "lib-icu": ">=4.4",
                 "php": ">=5.3.3",
                 "symfony/intl": "~2.3"
             },
@@ -1824,7 +1837,7 @@
                 "icu",
                 "intl"
             ],
-            "time": "2013-06-03 18:32:07"
+            "time": "2013-06-03 18:32:58"
         },
         {
             "name": "symfony/monolog-bundle",

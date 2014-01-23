@@ -11,5 +11,7 @@ parameters:
     mailer_user:       ~
     mailer_password:   ~
 
+    webapp_path:       /cms
+
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
