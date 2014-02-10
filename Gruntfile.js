@@ -1,5 +1,6 @@
 /*global module:false*/
-var path = require('path')
+var path = require('path');
+
 module.exports = function(grunt) {
 
     // Project configuration.
@@ -23,7 +24,10 @@ module.exports = function(grunt) {
                     '<%= folders.components %>/loglevel/dist/loglevel.js',
                     '<%= folders.components %>/bootstrap/js/collapse.js',
                     '<%= folders.components %>/bootstrap/js/dropdown.js',
-                    '<%= bundle.core %>/js/**/*.js'
+                    '<%= folders.components %>/twig.js/twig.js',
+                    '<%= bundle.core %>/js/Model/*.js',
+                    '<%= bundle.core %>/js/Collection/*.js',
+                    '<%= bundle.core %>/js/View/*.js'
                 ],
                 dest: '<%= folders.target %>/js/base.js',
                 nonull: true
@@ -83,7 +87,6 @@ module.exports = function(grunt) {
                 ]
             }
         }
-
     });
 
     // These plugins provide necessary tasks.
