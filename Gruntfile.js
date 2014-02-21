@@ -64,6 +64,7 @@ module.exports = function(grunt) {
         twig: {
             options: {
                 amd_wrapper: false,
+                each_template: '{{ variable }}["{{ filepath }}"] = Twig.twig({ allowInlineIncludes: true, id: "{{ filepath }}", data: {{ compiled }} });',
                 template_key: path.basename
             },
             core: {
