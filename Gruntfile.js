@@ -27,7 +27,8 @@ module.exports = function(grunt) {
                     '<%= folders.components %>/twig.js/twig.js',
                     '<%= bundle.core %>/js/Model/*.js',
                     '<%= bundle.core %>/js/Collection/*.js',
-                    '<%= bundle.core %>/js/View/*.js'
+                    '<%= bundle.core %>/js/View/*.js',
+                    '<%= bundle.core %>/js/Controller/*.js'
                 ],
                 dest: '<%= folders.target %>/js/base.js',
                 nonull: true
