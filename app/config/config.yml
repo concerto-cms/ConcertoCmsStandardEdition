@@ -28,7 +28,8 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
-
+    globals:
+        application_name: %application_name%
 # Assetic Configuration
 assetic:
     debug:          "%kernel.debug%"
@@ -92,4 +93,39 @@ cmf_routing:
         persistence:
             phpcr:
                 route_basepath: /cms/routes
-        generic_controller: \ConcertoCms\FrontBundle\Controller\DefaultController::pageAction
+        generic_controller: \ConcertoCms\DemoBundle\Controller\DefaultController::pageAction
+cmf_menu:
+    persistence:
+        phpcr:
+            enabled:              true
+            menu_basepath:        /cms/menu
+            use_sonata_admin:     false
+
+cmf_media:
+    persistence:
+        phpcr:
+            enabled: true
+
+liip_imagine:
+    filter_sets:
+        image_upload_thumbnail:
+            data_loader: cmf_media_doctrine_phpcr
+            quality: 85
+            filters:
+                thumbnail: { size: [100, 100], mode: outbound }
+        elfinder_thumbnail:
+            data_loader: cmf_media_doctrine_phpcr
+            quality: 85
+            filters:
+                thumbnail: { size: [48, 48], mode: inset }
+
+fm_elfinder:
+    editor: ckeditor # other choices are tinymce or simple
+    connector:
+        roots:
+            uploads:
+                driver: LocalFileSystem
+                path: uploads
+                upload_allow: ['image/png', 'image/jpg', 'image/jpeg', 'application/pdf']
+                upload_deny: ['all']
+                upload_max_size: 5M

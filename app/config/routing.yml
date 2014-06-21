@@ -1,3 +1,29 @@
+concerto_cms_demo:
+    resource: "@ConcertoCmsDemoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+concerto_cms_security:
+    resource: "@ConcertoCmsSecurityBundle/Resources/config/routing.yml"
+    prefix:   %webapp_path%
+
+elfinder:
+     resource: "@FMElfinderBundle/Resources/config/routing.yml"
+     prefix:   /cms
+
 concerto_cms_core:
     resource: "@ConcertoCmsCoreBundle/Resources/config/routing.yml"
     prefix:   "%webapp_path%"
+
+concerto_cms_news:
+    resource: "@ConcertoCmsNewsBundle/Resources/config/routing.yml"
+    prefix:   /cms
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+
+cmf_media_file:
+    resource: "@CmfMediaBundle/Resources/config/routing/file.xml"
+
+cmf_media_image:
+    resource: "@CmfMediaBundle/Resources/config/routing/image.xml"
+

@@ -10,32 +10,50 @@ module.exports = function(grunt) {
             components: 'bower_components',
             target: 'web'
         },
-		bundle: {
-            core: 'vendor/concerto-cms/core-bundle/ConcertoCms/CoreBundle/Resources'
-		},
+        bundle: {
+            core:       'vendor/concerto-cms/core-bundle/ConcertoCms/CoreBundle/Resources',
+            news:       'vendor/concerto-cms/news-bundle/ConcertoCms/NewsBundle/Resources',
+            security:   'vendor/concerto-cms/security-bundle/ConcertoCms/SecurityBundle/Resources'
+        },
         // Task configuration.
         concat: {
-            /* Main.js - Essential JS that is used in (practically) every page */
             base: {
                 src: [
-                    '<%= folders.components %>/jquery/jquery.js',
+                    '<%= folders.components %>/jquery/dist/jquery.js',
                     '<%= folders.components %>/underscore/underscore.js',
                     '<%= folders.components %>/backbone/backbone.js',
-                    '<%= folders.components %>/loglevel/dist/loglevel.js',
+                    '<%= folders.components %>/backbone.stickit/backbone.stickit.js',
+                    '<%= folders.components %>/bootstrap/js/alert.js',
                     '<%= folders.components %>/bootstrap/js/collapse.js',
                     '<%= folders.components %>/bootstrap/js/dropdown.js',
+                    '<%= folders.components %>/bootstrap/js/modal.js',
+                    '<%= folders.components %>/bootstrap-growl-forked/bootstrap-growl.js',
+                    '<%= folders.components %>/moment/moment.js',
                     '<%= folders.components %>/twig.js/twig.js',
+                    '<%= folders.components %>/bootstrap-datepicker/js/bootstrap-datepicker.js',
+                    '<%= bundle.core %>/js/fineuploader-4.4.0.js'
+                ],
+                dest: '<%= folders.target %>/js/base.js',
+                nonull: true
+            },
+            app: {
+                src: [
+                    '<%= bundle.core %>/js/globals.js',
                     '<%= bundle.core %>/js/Model/*.js',
                     '<%= bundle.core %>/js/Collection/*.js',
                     '<%= bundle.core %>/js/View/*.js',
-                    '<%= bundle.core %>/js/Controller/*.js'
+                    '<%= bundle.core %>/js/Controller/*.js',
+                    '<%= bundle.news %>/js/Model/*.js',
+                    '<%= bundle.news %>/js/Collection/*.js',
+                    '<%= bundle.news %>/js/View/*.js',
+                    '<%= bundle.news %>/js/Controller/*.js',
                 ],
-                dest: '<%= folders.target %>/js/base.js',
+                dest: '<%= folders.target %>/js/app.js',
                 nonull: true
             }
         },
         less: {
-            base: {
+            app: {
                 options: {
                     paths: [
                         '<%= folders.components %>',
@@ -43,22 +61,46 @@ module.exports = function(grunt) {
                     ]
                 },
                 files: {
-                    '<%= folders.target %>/css/screen.css': "<%= bundle.core %>/less/base.less"
+                    '<%= folders.target %>/css/app.css': "<%= bundle.core %>/less/css-app.less"
+                }
+            },
+            login: {
+                options: {
+                    paths: [
+                        '<%= folders.components %>',
+                        '<%= bundle.security %>/less'
+                    ]
+                },
+                files: {
+                    '<%= folders.target %>/css/login.css': "<%= bundle.security %>/less/css-login.less"
                 }
             }
+
         },
         watch: {
             less: {
                 files: '<%= bundle.core %>/less/**/*.less',
-                tasks: ['less']
+                tasks: ['less:app']
+            },
+            less2: {
+                files: '<%= bundle.security %>/less/**/*.less',
+                tasks: ['less:login']
             },
             js: {
                 files: '<%= bundle.core %>/js/**/*.js',
                 tasks: ['js']
             },
+            js2: {
+                files: '<%= bundle.news %>/js/**/*.js',
+                tasks: ['js']
+            },
             twig: {
                 files: '<%= bundle.core %>/twigjs/**/*.twig',
-                tasks: ['twig']
+                tasks: ['twig:core']
+            },
+            twignews: {
+                files: '<%= bundle.news %>/twigjs/**/*.twig',
+                tasks: ['twig:news']
             }
 
         },
@@ -72,6 +114,13 @@ module.exports = function(grunt) {
                 files: {
                     '<%= folders.target%>/js/templates.core.js' : [
                         '<%= bundle.core %>/twigjs/*.twig'
+                    ]
+                }
+            },
+            news: {
+                files: {
+                    '<%= folders.target%>/js/templates.news.js' : [
+                        '<%= bundle.news %>/twigjs/*.twig'
                     ]
                 }
             }

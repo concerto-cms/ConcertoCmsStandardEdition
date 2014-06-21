@@ -1,3 +1,6 @@
+#IDE
+.idea
+
 # Bootstrap
 app/bootstrap*
 
@@ -16,3 +19,7 @@ app/config/parameters.yml
 
 #frontend
 bower_components
+node_modules
+web/css
+web/fonts
+web/js

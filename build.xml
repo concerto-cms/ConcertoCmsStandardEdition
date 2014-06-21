@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Betec" default="build">
+    <target name="build">
+        <phingcall target="install" />
+        <echo msg="Build completed!" />
+        <phingcall target="test" />
+    </target>
+
+    <target name="install">
+        <echo msg="Running composer..." />
+        <exec
+                command="composer install"
+                checkreturn="true"
+                />
+        <echo msg="Running NPM..." />
+        <exec command="npm update"
+              checkreturn="true"
+                />
+        <echo msg="Running Bower..." />
+        <exec command="bower install"
+              checkreturn="true"
+                />
+        <echo msg="Running Grunt..." />
+        <exec command="grunt"
+              checkreturn="true"
+                />
+    </target>
+    <target name="test">
+        <echo msg="Running PHP_CodeSniffer..." />
+        <phpcodesniffer
+                standard="PSR2"
+                format="full"
+                file="src"
+                allowedFileExtensions="php"/>
+    </target>
+</project>

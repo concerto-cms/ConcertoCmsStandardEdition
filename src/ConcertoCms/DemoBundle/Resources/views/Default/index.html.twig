@@ -1,0 +1,10 @@
+{% extends '::base.html.twig' %}
+{% block stylesheets %}
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+{% endblock %}
+{% block body %}
+    <div class="container">
+    <h1>{{ document.title }}</h1>
+    {{ document.content|raw }}
+    </div>
+{% endblock %}

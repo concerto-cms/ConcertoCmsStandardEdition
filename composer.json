@@ -1,8 +1,7 @@
 {
-    "name": "symfony/framework-standard-edition",
-    "license": "MIT",
+    "name": "concerto-cms/concertocms-standard-edition",
     "type": "project",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "description": "Concerto CMS sandbox repository",
     "autoload": {
         "psr-0": { "": "src/" }
     },
@@ -19,10 +18,12 @@
         "sensio/framework-extra-bundle": "~3.0",
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
-        "concerto-cms/front-bundle": "dev-master",
-        "concerto-cms/core-bundle": "dev-master"
+        "concerto-cms/core-bundle": "dev-master",
+        "concerto-cms/news-bundle": "dev-master",
+        "concerto-cms/security-bundle": "dev-master"
 
     },
+    "minimum-stability": "RC",
     "scripts": {
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
@@ -45,11 +46,15 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/concerto-cms/FrontBundle"
+            "url": "https://github.com/concerto-cms/CoreBundle"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/concerto-cms/CoreBundle"
+            "url": "https://github.com/concerto-cms/SecurityBundle"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/concerto-cms/NewsBundle"
         }
     ],
     "extra": {

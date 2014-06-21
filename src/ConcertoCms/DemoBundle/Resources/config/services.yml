@@ -1,0 +1,7 @@
+parameters:
+#    concerto_cms_demo.example.class: ConcertoCms\DemoBundle\Example
+
+services:
+#    concerto_cms_demo.example:
+#        class: %concerto_cms_demo.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

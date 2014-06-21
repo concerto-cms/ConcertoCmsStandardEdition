@@ -18,9 +18,18 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
             new Doctrine\Bundle\PHPCRBundle\DoctrinePHPCRBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
+            new Liip\ImagineBundle\LiipImagineBundle(),
+            new FM\ElfinderBundle\FMElfinderBundle(),
             new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
-            new ConcertoCms\CoreBundle\ConcertoCmsCoreBundle(),
-            new ConcertoCms\FrontBundle\ConcertoCmsFrontBundle()
+            new Symfony\Cmf\Bundle\MediaBundle\CmfMediaBundle(),
+            new Symfony\Cmf\Bundle\MenuBundle\CmfMenuBundle(),
+            new Symfony\Cmf\Bundle\CoreBundle\CmfCoreBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new \ConcertoCms\CoreBundle\ConcertoCmsCoreBundle(),
+            new \ConcertoCms\NewsBundle\ConcertoCmsNewsBundle(),
+            new ConcertoCms\SecurityBundle\ConcertoCmsSecurityBundle(),
+            new ConcertoCms\DemoBundle\ConcertoCmsDemoBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

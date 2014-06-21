@@ -1,0 +1,4 @@
+concerto_cms_demo_splash:
+    path: /
+    defaults:
+        _controller: website.controller.page:splashAction
