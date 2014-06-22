@@ -1,7 +1,8 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
     "hash": "6190938c42882da44569269c6e1d41d5",
     "packages": [
@@ -56,12 +57,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concerto-cms/CoreBundle.git",
-                "reference": "f1a5ad46d5cfb56c782c6a77992d4c4542a984de"
+                "reference": "463c81ee926eb06e8f9d882c51de2d64eedf291a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concerto-cms/CoreBundle/zipball/f1a5ad46d5cfb56c782c6a77992d4c4542a984de",
-                "reference": "f1a5ad46d5cfb56c782c6a77992d4c4542a984de",
+                "url": "https://api.github.com/repos/concerto-cms/CoreBundle/zipball/463c81ee926eb06e8f9d882c51de2d64eedf291a",
+                "reference": "463c81ee926eb06e8f9d882c51de2d64eedf291a",
                 "shasum": ""
             },
             "require": {
@@ -98,7 +99,7 @@
                 "source": "https://github.com/concerto-cms/CoreBundle/tree/master",
                 "issues": "https://github.com/concerto-cms/CoreBundle/issues"
             },
-            "time": "2014-06-21 15:04:06"
+            "time": "2014-06-22 15:45:02"
         },
         {
             "name": "concerto-cms/news-bundle",
