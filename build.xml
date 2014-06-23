@@ -25,6 +25,20 @@
               checkreturn="true"
                 />
     </target>
+    <target name="resetdemo">
+        <exec
+                command="php app/console doctrine:phpcr:init:dbal --drop"
+                passthru="true"
+                />
+        <exec
+                command="php app/console doctrine:phpcr:repository:init"
+                passthru="true"
+                />
+        <exec
+                command="php app/console concerto:fixtures:load"
+                passthru="true"
+                />
+    </target>
     <target name="test">
         <echo msg="Running PHP_CodeSniffer..." />
         <phpcodesniffer

@@ -5,6 +5,7 @@ parameters:
     database_name:     concerto
     database_user:     root
     database_password: ~
+    database_path:     "%kernel.root_dir%/app.db"
 
     mailer_transport:  smtp
     mailer_host:       127.0.0.1

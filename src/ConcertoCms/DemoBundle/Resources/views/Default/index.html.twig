@@ -1,10 +1,44 @@
 {% extends '::base.html.twig' %}
+{% block title document.title %}
 {% block stylesheets %}
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
 {% endblock %}
 {% block body %}
-    <div class="container">
-    <h1>{{ document.title }}</h1>
-    {{ document.content|raw }}
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Concerto CMS demo</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ app.request.locale }} <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">EN</a></li>
+                        <li><a href="#">FR</a></li>
+                        <li><a href="#">NL</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="page-header">
+        <div class="container">
+            <h1>{{ document.title }}</h1>
+        </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                {{ document.content|raw }}
+            </div>
+            <div class="col-md-3">
+                {{ knp_menu_render('main-menu/' ~ app.request.locale) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block javascripts %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
 {% endblock %}
