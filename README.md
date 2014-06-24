@@ -1,6 +1,8 @@
-Concerto Cms
-==========================
+#Concerto Cms
+Standard installation of the Concerto CMS. This repository contains a standard Symfony 2 installation where all Concerto CMS bundles were added.
 
-Standard installation of the Concerto CMS
+To read more about the Concerto CMS, please visit http://concertocms.org.
 
-**WARNING** This software is still in early development!
+###Installation instructions
+Instructions can be found on our website:
+http://concertocms.org/en/docs/getting-started/standard-edition
