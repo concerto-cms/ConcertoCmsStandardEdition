@@ -1,7 +1,7 @@
 {
-    "name": "concerto-cms/concertocms-standard-edition",
+    "name": "concerto-cms/standard-edition",
     "type": "project",
-    "description": "Concerto CMS sandbox repository",
+    "description": "Concerto CMS standard edition",
     "autoload": {
         "psr-0": { "": "src/" }
     },
