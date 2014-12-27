@@ -18,9 +18,8 @@
         "sensio/framework-extra-bundle": "~3.0",
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
-        "concerto-cms/core-bundle": "dev-master",
-        "concerto-cms/news-bundle": "dev-master",
-        "concerto-cms/security-bundle": "dev-master"
+        "concerto-cms/core-bundle": "dev-refactor",
+        "concerto-cms/admin-bundle": "dev-master"
 
     },
     "minimum-stability": "RC",

@@ -11,9 +11,7 @@ module.exports = function(grunt) {
             target: 'web'
         },
         bundle: {
-            core:       'vendor/concerto-cms/core-bundle/ConcertoCms/CoreBundle/Resources',
-            news:       'vendor/concerto-cms/news-bundle/ConcertoCms/NewsBundle/Resources',
-            security:   'vendor/concerto-cms/security-bundle/ConcertoCms/SecurityBundle/Resources'
+            admin:       'src/ConcertoCms/AdminBundle/Resources'
         },
         // Task configuration.
         concat: {
@@ -27,28 +25,9 @@ module.exports = function(grunt) {
                     '<%= folders.components %>/bootstrap/js/collapse.js',
                     '<%= folders.components %>/bootstrap/js/dropdown.js',
                     '<%= folders.components %>/bootstrap/js/modal.js',
-                    '<%= folders.components %>/bootstrap-growl-forked/bootstrap-growl.js',
-                    '<%= folders.components %>/moment/moment.js',
-                    '<%= folders.components %>/twig.js/twig.js',
-                    '<%= folders.components %>/bootstrap-datepicker/js/bootstrap-datepicker.js',
-                    '<%= bundle.core %>/js/fineuploader-4.4.0.js'
+                    '<%= folders.components %>/twig.js/twig.js'
                 ],
                 dest: '<%= folders.target %>/js/base.js',
-                nonull: true
-            },
-            app: {
-                src: [
-                    '<%= bundle.core %>/js/globals.js',
-                    '<%= bundle.core %>/js/Model/*.js',
-                    '<%= bundle.core %>/js/Collection/*.js',
-                    '<%= bundle.core %>/js/View/*.js',
-                    '<%= bundle.core %>/js/Controller/*.js',
-                    '<%= bundle.news %>/js/Model/*.js',
-                    '<%= bundle.news %>/js/Collection/*.js',
-                    '<%= bundle.news %>/js/View/*.js',
-                    '<%= bundle.news %>/js/Controller/*.js',
-                ],
-                dest: '<%= folders.target %>/js/app.js',
                 nonull: true
             }
         },
@@ -57,52 +36,27 @@ module.exports = function(grunt) {
                 options: {
                     paths: [
                         '<%= folders.components %>',
-                        '<%= bundle.core %>/less'
+                        '<%= bundle.admin %>/less'
                     ]
                 },
                 files: {
-                    '<%= folders.target %>/css/app.css': "<%= bundle.core %>/less/css-app.less"
-                }
-            },
-            login: {
-                options: {
-                    paths: [
-                        '<%= folders.components %>',
-                        '<%= bundle.security %>/less'
-                    ]
-                },
-                files: {
-                    '<%= folders.target %>/css/login.css': "<%= bundle.security %>/less/css-login.less"
+                    '<%= folders.target %>/css/app.css': "<%= bundle.admin %>/less/css-app.less"
                 }
             }
-
         },
         watch: {
             less: {
-                files: '<%= bundle.core %>/less/**/*.less',
+                files: '<%= bundle.admin %>/less/**/*.less',
                 tasks: ['less:app']
             },
-            less2: {
-                files: '<%= bundle.security %>/less/**/*.less',
-                tasks: ['less:login']
-            },
             js: {
-                files: '<%= bundle.core %>/js/**/*.js',
-                tasks: ['js']
-            },
-            js2: {
-                files: '<%= bundle.news %>/js/**/*.js',
+                files: '<%= bundle.admin %>/js/**/*.js',
                 tasks: ['js']
             },
             twig: {
-                files: '<%= bundle.core %>/twigjs/**/*.twig',
-                tasks: ['twig:core']
-            },
-            twignews: {
-                files: '<%= bundle.news %>/twigjs/**/*.twig',
-                tasks: ['twig:news']
+                files: '<%= bundle.admin %>/twigjs/**/*.twig',
+                tasks: ['twig:admin']
             }
-
         },
         twig: {
             options: {
@@ -110,17 +64,10 @@ module.exports = function(grunt) {
                 each_template: '{{ variable }}["{{ filepath }}"] = Twig.twig({ allowInlineIncludes: true, id: "{{ filepath }}", data: {{ compiled }} });',
                 template_key: path.basename
             },
-            core: {
+            admin: {
                 files: {
-                    '<%= folders.target%>/js/templates.core.js' : [
-                        '<%= bundle.core %>/twigjs/*.twig'
-                    ]
-                }
-            },
-            news: {
-                files: {
-                    '<%= folders.target%>/js/templates.news.js' : [
-                        '<%= bundle.news %>/twigjs/*.twig'
+                    '<%= folders.target%>/js/templates.admin.js' : [
+                        '<%= bundle.admin %>/twigjs/*.twig'
                     ]
                 }
             }
