@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d6499750ea941e0c7797adfa836a0b05",
+    "hash": "c4b01f5aa73f6d82427eda7e53494f1d",
     "packages": [
         {
             "name": "aferrandini/urlizer",
@@ -56,12 +56,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concerto-cms/AdminBundle.git",
-                "reference": "07e2259499763ad056e44db819cc8a53225a0bb8"
+                "reference": "ecf8fd465a4cbe2d29968dd3d3904b836a27f506"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concerto-cms/AdminBundle/zipball/07e2259499763ad056e44db819cc8a53225a0bb8",
-                "reference": "07e2259499763ad056e44db819cc8a53225a0bb8",
+                "url": "https://api.github.com/repos/concerto-cms/AdminBundle/zipball/ecf8fd465a4cbe2d29968dd3d3904b836a27f506",
+                "reference": "ecf8fd465a4cbe2d29968dd3d3904b836a27f506",
                 "shasum": ""
             },
             "require": {
@@ -84,7 +84,7 @@
                 }
             ],
             "description": "Backend GUI for the Concerto CMS software",
-            "time": "2014-12-26 14:04:39"
+            "time": "2014-12-30 15:30:22"
         },
         {
             "name": "concerto-cms/core-bundle",
@@ -92,12 +92,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concerto-cms/CoreBundle.git",
-                "reference": "2f9d46a63cff500e484aeeb81d420e0b06284ea5"
+                "reference": "61a33a2e0615ef2f6f7eb5973f4f673c91d583a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concerto-cms/CoreBundle/zipball/2f9d46a63cff500e484aeeb81d420e0b06284ea5",
-                "reference": "2f9d46a63cff500e484aeeb81d420e0b06284ea5",
+                "url": "https://api.github.com/repos/concerto-cms/CoreBundle/zipball/61a33a2e0615ef2f6f7eb5973f4f673c91d583a8",
+                "reference": "61a33a2e0615ef2f6f7eb5973f4f673c91d583a8",
                 "shasum": ""
             },
             "require": {
@@ -132,7 +132,7 @@
                 "source": "https://github.com/concerto-cms/CoreBundle/tree/refactor",
                 "issues": "https://github.com/concerto-cms/CoreBundle/issues"
             },
-            "time": "2014-12-26 13:40:57"
+            "time": "2014-12-30 11:52:52"
         },
         {
             "name": "doctrine/annotations",
@@ -1309,16 +1309,16 @@
         },
         {
             "name": "jackalope/jackalope",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jackalope/jackalope.git",
-                "reference": "87a3fc8ba0a33950e87ad3dbe90ce28bb354d707"
+                "reference": "5aa40c76f1e59e8a3fc3e655806d46d06204f12c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jackalope/jackalope/zipball/87a3fc8ba0a33950e87ad3dbe90ce28bb354d707",
-                "reference": "87a3fc8ba0a33950e87ad3dbe90ce28bb354d707",
+                "url": "https://api.github.com/repos/jackalope/jackalope/zipball/5aa40c76f1e59e8a3fc3e655806d46d06204f12c",
+                "reference": "5aa40c76f1e59e8a3fc3e655806d46d06204f12c",
                 "shasum": ""
             },
             "require": {
@@ -1358,7 +1358,7 @@
             "keywords": [
                 "phpcr"
             ],
-            "time": "2014-12-19 10:38:00"
+            "time": "2014-12-28 08:25:32"
         },
         {
             "name": "jackalope/jackalope-doctrine-dbal",
@@ -1717,16 +1717,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.11.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "ec3961874c43840e96da3a8a1ed20d8c73d7e5aa"
+                "reference": "1fbe8c2641f2b163addf49cc5e18f144bec6b19f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/ec3961874c43840e96da3a8a1ed20d8c73d7e5aa",
-                "reference": "ec3961874c43840e96da3a8a1ed20d8c73d7e5aa",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1fbe8c2641f2b163addf49cc5e18f144bec6b19f",
+                "reference": "1fbe8c2641f2b163addf49cc5e18f144bec6b19f",
                 "shasum": ""
             },
             "require": {
@@ -1740,7 +1740,7 @@
                 "aws/aws-sdk-php": "~2.4, >2.4.8",
                 "doctrine/couchdb": "~1.0@dev",
                 "graylog2/gelf-php": "~1.0",
-                "phpunit/phpunit": "~3.7.0",
+                "phpunit/phpunit": "~4.0",
                 "raven/raven": "~0.5",
                 "ruflin/elastica": "0.90.*",
                 "videlalvaro/php-amqplib": "~2.4"
@@ -1759,7 +1759,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.11.x-dev"
+                    "dev-master": "1.12.x-dev"
                 }
             },
             "autoload": {
@@ -1785,7 +1785,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-09-30 13:30:58"
+            "time": "2014-12-29 21:29:35"
         },
         {
             "name": "phpcr/phpcr",
@@ -1944,17 +1944,17 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v2.3.6",
+            "version": "v2.3.7",
             "target-dir": "Sensio/Bundle/DistributionBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "ddcfeaeb504ece5de546dbefd5c527eed7453048"
+                "reference": "59085bedb5bffbc7305f42b836daa2ed3173be3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/ddcfeaeb504ece5de546dbefd5c527eed7453048",
-                "reference": "ddcfeaeb504ece5de546dbefd5c527eed7453048",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/59085bedb5bffbc7305f42b836daa2ed3173be3b",
+                "reference": "59085bedb5bffbc7305f42b836daa2ed3173be3b",
                 "shasum": ""
             },
             "require": {
@@ -1986,7 +1986,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2014-12-03 13:50:45"
+            "time": "2014-12-30 08:39:48"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -2516,16 +2516,16 @@
         },
         {
             "name": "symfony/monolog-bundle",
-            "version": "v2.6.1",
+            "version": "v2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/MonologBundle.git",
-                "reference": "227bbeefe30f2d95e3fe5fbd1ccda414287a957a"
+                "reference": "e8f71c91a3784f3fa1a75fb1f7f4d4826c5f2773"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/MonologBundle/zipball/227bbeefe30f2d95e3fe5fbd1ccda414287a957a",
-                "reference": "227bbeefe30f2d95e3fe5fbd1ccda414287a957a",
+                "url": "https://api.github.com/repos/symfony/MonologBundle/zipball/e8f71c91a3784f3fa1a75fb1f7f4d4826c5f2773",
+                "reference": "e8f71c91a3784f3fa1a75fb1f7f4d4826c5f2773",
                 "shasum": ""
             },
             "require": {
@@ -2543,7 +2543,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6.x-dev"
+                    "dev-master": "2.7.x-dev"
                 }
             },
             "autoload": {
@@ -2571,7 +2571,7 @@
                 "log",
                 "logging"
             ],
-            "time": "2014-07-21 00:36:06"
+            "time": "2014-12-28 16:37:56"
         },
         {
             "name": "symfony/swiftmailer-bundle",
@@ -2904,6 +2904,7 @@
         "concerto-cms/admin-bundle": 20
     },
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.3"
     },
