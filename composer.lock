@@ -56,12 +56,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concerto-cms/AdminBundle.git",
-                "reference": "ecf8fd465a4cbe2d29968dd3d3904b836a27f506"
+                "reference": "cb712474f6b0ab3daac6e975dfda1114451dc26f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concerto-cms/AdminBundle/zipball/ecf8fd465a4cbe2d29968dd3d3904b836a27f506",
-                "reference": "ecf8fd465a4cbe2d29968dd3d3904b836a27f506",
+                "url": "https://api.github.com/repos/concerto-cms/AdminBundle/zipball/cb712474f6b0ab3daac6e975dfda1114451dc26f",
+                "reference": "cb712474f6b0ab3daac6e975dfda1114451dc26f",
                 "shasum": ""
             },
             "require": {
@@ -84,7 +84,7 @@
                 }
             ],
             "description": "Backend GUI for the Concerto CMS software",
-            "time": "2014-12-30 15:30:22"
+            "time": "2014-12-30 19:36:11"
         },
         {
             "name": "concerto-cms/core-bundle",
@@ -92,12 +92,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concerto-cms/CoreBundle.git",
-                "reference": "61a33a2e0615ef2f6f7eb5973f4f673c91d583a8"
+                "reference": "86787d6482ae04a4cf73a7f976ca90b664cd59be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concerto-cms/CoreBundle/zipball/61a33a2e0615ef2f6f7eb5973f4f673c91d583a8",
-                "reference": "61a33a2e0615ef2f6f7eb5973f4f673c91d583a8",
+                "url": "https://api.github.com/repos/concerto-cms/CoreBundle/zipball/86787d6482ae04a4cf73a7f976ca90b664cd59be",
+                "reference": "86787d6482ae04a4cf73a7f976ca90b664cd59be",
                 "shasum": ""
             },
             "require": {
@@ -105,10 +105,10 @@
                 "doctrine/data-fixtures": "1.0.*",
                 "doctrine/doctrine-bundle": "~1.2",
                 "doctrine/orm": "~2.2,>=2.2.3",
-                "jackalope/jackalope-doctrine-dbal": "1.1.*",
-                "symfony-cmf/media-bundle": "1.1.*",
-                "symfony-cmf/menu-bundle": "1.1.*",
-                "symfony-cmf/routing-bundle": "1.*",
+                "jackalope/jackalope-doctrine-dbal": "~1",
+                "symfony-cmf/media-bundle": "~1",
+                "symfony-cmf/menu-bundle": "~1",
+                "symfony-cmf/routing-bundle": "~1",
                 "symfony/monolog-bundle": "~2.4"
             },
             "require-dev": {
@@ -132,7 +132,7 @@
                 "source": "https://github.com/concerto-cms/CoreBundle/tree/refactor",
                 "issues": "https://github.com/concerto-cms/CoreBundle/issues"
             },
-            "time": "2014-12-30 11:52:52"
+            "time": "2014-12-30 19:36:11"
         },
         {
             "name": "doctrine/annotations",
@@ -775,6 +775,60 @@
             "time": "2014-12-20 21:24:13"
         },
         {
+            "name": "doctrine/instantiator",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/instantiator.git",
+                "reference": "f976e5de371104877ebc89bd8fecb0019ed9c119"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/f976e5de371104877ebc89bd8fecb0019ed9c119",
+                "reference": "f976e5de371104877ebc89bd8fecb0019ed9c119",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3,<8.0-DEV"
+            },
+            "require-dev": {
+                "athletic/athletic": "~0.1.8",
+                "ext-pdo": "*",
+                "ext-phar": "*",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "2.0.*@ALPHA"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Instantiator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com",
+                    "homepage": "http://ocramius.github.com/"
+                }
+            ],
+            "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
+            "homepage": "https://github.com/doctrine/instantiator",
+            "keywords": [
+                "constructor",
+                "instantiate"
+            ],
+            "time": "2014-10-13 12:58:55"
+        },
+        {
             "name": "doctrine/lexer",
             "version": "v1.0",
             "source": {
@@ -901,50 +955,50 @@
         },
         {
             "name": "doctrine/phpcr-bundle",
-            "version": "1.1.2",
-            "target-dir": "Doctrine/Bundle/PHPCRBundle",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrinePHPCRBundle.git",
-                "reference": "0d3e339f8dac901c226433391dfb798953078214"
+                "reference": "1a4fc663f36a8c09e455e8f79692b47d7c18d669"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrinePHPCRBundle/zipball/0d3e339f8dac901c226433391dfb798953078214",
-                "reference": "0d3e339f8dac901c226433391dfb798953078214",
+                "url": "https://api.github.com/repos/doctrine/DoctrinePHPCRBundle/zipball/1a4fc663f36a8c09e455e8f79692b47d7c18d669",
+                "reference": "1a4fc663f36a8c09e455e8f79692b47d7c18d669",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "phpcr/phpcr-implementation": "2.1.*",
-                "phpcr/phpcr-utils": "~1.1.0",
+                "phpcr/phpcr-utils": "~1.2.0",
                 "symfony/doctrine-bridge": "~2.3",
                 "symfony/framework-bundle": "~2.3"
             },
             "require-dev": {
-                "doctrine/phpcr-odm": "1.1.*",
+                "doctrine/phpcr-odm": "~1.1",
                 "jackalope/jackalope-jackrabbit": "~1.1.0",
                 "matthiasnoback/symfony-dependency-injection-test": "0.*",
-                "symfony-cmf/testing": "1.1.*",
+                "symfony-cmf/testing": "~1.1",
                 "symfony/form": "~2.2"
             },
             "suggest": {
                 "burgov/key-value-form-bundle": "to edit assoc multivalue properties. require version 1.0.*",
                 "doctrine/data-fixtures": "if you want to use the fixture loading.",
                 "doctrine/doctrine-bundle": "when using jackalope-doctrine-dbal",
-                "doctrine/phpcr-odm": "if you want to use the odm as well. require version 1.1.*",
+                "doctrine/phpcr-odm": "if you want to use the odm as well. require version ~1.1",
                 "jackalope/jackalope-doctrine-dbal": "if you want to use jackalope-doctrine-dbal. require version 1.0.*",
-                "jackalope/jackalope-jackrabbit": "if you want to connect to jackrabbit. require version ~1.0.1"
+                "jackalope/jackalope-jackrabbit": "if you want to connect to jackrabbit. require version ~1.0.1",
+                "phpcr/phpcr-shell": "If you want native access to PHPCR-Shell to manage the PHPCR repository"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Doctrine\\Bundle\\PHPCRBundle": ""
+                "psr-4": {
+                    "Doctrine\\Bundle\\PHPCRBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -969,31 +1023,32 @@
                 "persistence",
                 "phpcr"
             ],
-            "time": "2014-08-19 20:09:50"
+            "time": "2014-10-25 14:49:36"
         },
         {
             "name": "doctrine/phpcr-odm",
-            "version": "1.1.3",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/phpcr-odm.git",
-                "reference": "9d705e75452f3a15a3c676815af4aec0c41135c0"
+                "reference": "320c84039dfdc1a8608dfbba19ab7d34620421a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/phpcr-odm/zipball/9d705e75452f3a15a3c676815af4aec0c41135c0",
-                "reference": "9d705e75452f3a15a3c676815af4aec0c41135c0",
+                "url": "https://api.github.com/repos/doctrine/phpcr-odm/zipball/320c84039dfdc1a8608dfbba19ab7d34620421a8",
+                "reference": "320c84039dfdc1a8608dfbba19ab7d34620421a8",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": "~2.4.0",
+                "doctrine/instantiator": "~1.0.1",
                 "php": ">=5.3.3",
                 "phpcr/phpcr": "~2.1.1",
                 "phpcr/phpcr-implementation": "~2.1.0",
-                "phpcr/phpcr-utils": ">=1.1.0,<1.3.x-dev"
+                "phpcr/phpcr-utils": "~1.1"
             },
             "require-dev": {
-                "liip/rmt": "dev-master",
+                "liip/rmt": "~1.1",
                 "symfony/yaml": "~2.0"
             },
             "suggest": {
@@ -1008,7 +1063,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -1041,7 +1096,7 @@
                 "odm",
                 "phpcr"
             ],
-            "time": "2014-11-21 13:52:46"
+            "time": "2014-12-13 11:01:17"
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
@@ -1844,27 +1899,27 @@
         },
         {
             "name": "phpcr/phpcr-utils",
-            "version": "1.1.2",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpcr/phpcr-utils.git",
-                "reference": "305ab0a20cdfb55d8f9b92da2f28cffceebe04bf"
+                "reference": "5398f5c2c08f61063a6230a6640415a2c4566816"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpcr/phpcr-utils/zipball/305ab0a20cdfb55d8f9b92da2f28cffceebe04bf",
-                "reference": "305ab0a20cdfb55d8f9b92da2f28cffceebe04bf",
+                "url": "https://api.github.com/repos/phpcr/phpcr-utils/zipball/5398f5c2c08f61063a6230a6640415a2c4566816",
+                "reference": "5398f5c2c08f61063a6230a6640415a2c4566816",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3",
+                "php": ">=5.3.0",
                 "phpcr/phpcr": "~2.1.0",
-                "symfony/console": "2.*,>=2.0.5"
+                "symfony/console": "~2.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -1896,13 +1951,13 @@
                 }
             ],
             "description": "PHP Content Repository implementation independant utilities",
-            "homepage": "http://phpcr.github.com",
+            "homepage": "http://phpcr.github.io",
             "keywords": [
                 "cli",
                 "contentrepository",
                 "phpcr"
             ],
-            "time": "2014-12-20 11:13:13"
+            "time": "2014-11-17 10:54:18"
         },
         {
             "name": "psr/log",
@@ -2145,17 +2200,16 @@
         },
         {
             "name": "symfony-cmf/core-bundle",
-            "version": "1.1.0",
-            "target-dir": "Symfony/Cmf/Bundle/CoreBundle",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/CoreBundle.git",
-                "reference": "a2537e72f2238e96f1d47812edb7974970b98529"
+                "reference": "496e5f39c99afe41ab93f008586bdb8c3082ef82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/CoreBundle/zipball/a2537e72f2238e96f1d47812edb7974970b98529",
-                "reference": "a2537e72f2238e96f1d47812edb7974970b98529",
+                "url": "https://api.github.com/repos/symfony-cmf/CoreBundle/zipball/496e5f39c99afe41ab93f008586bdb8c3082ef82",
+                "reference": "496e5f39c99afe41ab93f008586bdb8c3082ef82",
                 "shasum": ""
             },
             "require": {
@@ -2164,27 +2218,27 @@
             },
             "require-dev": {
                 "sonata-project/admin-bundle": "~2.2",
-                "symfony-cmf/routing-bundle": "1.2.*",
-                "symfony-cmf/testing": "1.1.*"
+                "symfony-cmf/routing-bundle": "~1.2",
+                "symfony-cmf/testing": "~1.1"
             },
             "suggest": {
-                "doctrine/phpcr-bundle": "To be able to use the CMF twig extension, 1.0.*",
-                "doctrine/phpcr-odm": "To be able to use the CMF twig extension, 1.0.*",
+                "doctrine/phpcr-bundle": "To be able to use the CMF twig extension, ~1.0",
+                "doctrine/phpcr-odm": "To be able to use the CMF twig extension, ~1.0",
                 "sonata-project/admin-bundle": "To be able to enable the publish_workflow_listener extension, ~2.2",
-                "symfony-cmf/routing": "To be able to use the CMF twig extension functions cmf_prev_linkable/cmf_next_linkable, 1.0.*",
-                "symfony-cmf/routing-bundle": "To be able to enable the publish_workflow_listener, 1.0.*",
+                "symfony-cmf/routing": "To be able to use the CMF twig extension functions cmf_prev_linkable/cmf_next_linkable, ~1.0",
+                "symfony-cmf/routing-bundle": "To be able to enable the publish_workflow_listener, ~1.0",
                 "symfony/security-bundle": "To be able to use the publish workflow system, ~2.1",
                 "symfony/twig-bundle": "To get access to the CMF twig extension, ~2.1"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Symfony\\Cmf\\Bundle\\CoreBundle": ""
+                "psr-4": {
+                    "Symfony\\Cmf\\Bundle\\CoreBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2202,21 +2256,20 @@
             "keywords": [
                 "Symfony CMF"
             ],
-            "time": "2014-05-08 19:32:15"
+            "time": "2014-10-21 06:34:08"
         },
         {
             "name": "symfony-cmf/media-bundle",
-            "version": "1.1.0",
-            "target-dir": "Symfony/Cmf/Bundle/MediaBundle",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/MediaBundle.git",
-                "reference": "c6ed53fb25e656286147056c09d69dd319a2be5c"
+                "reference": "5b74558b22cfd87e934fbc068cb12f9fa125fe82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/MediaBundle/zipball/c6ed53fb25e656286147056c09d69dd319a2be5c",
-                "reference": "c6ed53fb25e656286147056c09d69dd319a2be5c",
+                "url": "https://api.github.com/repos/symfony-cmf/MediaBundle/zipball/5b74558b22cfd87e934fbc068cb12f9fa125fe82",
+                "reference": "5b74558b22cfd87e934fbc068cb12f9fa125fe82",
                 "shasum": ""
             },
             "require": {
@@ -2224,10 +2277,10 @@
                 "symfony/framework-bundle": "~2.3"
             },
             "require-dev": {
-                "jms/serializer-bundle": "0.12.*",
-                "liip/imagine-bundle": "~0.12",
+                "jms/serializer-bundle": "~0.12",
+                "liip/imagine-bundle": "~1.0.4",
                 "mikey179/vfsstream": "~1.2",
-                "symfony-cmf/testing": "1.1.*"
+                "symfony-cmf/testing": "~1.1"
             },
             "suggest": {
                 "helios-ag/fm-elfinder-bundle": "When using the elFinder media browser",
@@ -2240,12 +2293,12 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Symfony\\Cmf\\Bundle\\MediaBundle": ""
+                "psr-4": {
+                    "Symfony\\Cmf\\Bundle\\MediaBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2265,49 +2318,49 @@
                 "image",
                 "media"
             ],
-            "time": "2014-05-08 15:45:37"
+            "time": "2014-10-21 09:42:49"
         },
         {
             "name": "symfony-cmf/menu-bundle",
-            "version": "1.1.1",
-            "target-dir": "Symfony/Cmf/Bundle/MenuBundle",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/MenuBundle.git",
-                "reference": "9ab067ff1c5451d40f093f84ebc606de70437f08"
+                "reference": "1c57dc945d977c92d3a7ade05cde73faa542cc86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/MenuBundle/zipball/9ab067ff1c5451d40f093f84ebc606de70437f08",
-                "reference": "9ab067ff1c5451d40f093f84ebc606de70437f08",
+                "url": "https://api.github.com/repos/symfony-cmf/MenuBundle/zipball/1c57dc945d977c92d3a7ade05cde73faa542cc86",
+                "reference": "1c57dc945d977c92d3a7ade05cde73faa542cc86",
                 "shasum": ""
             },
             "require": {
-                "doctrine/phpcr-bundle": "1.1.*",
-                "doctrine/phpcr-odm": "1.1.*",
-                "knplabs/knp-menu-bundle": "1.1.*",
+                "doctrine/phpcr-bundle": "~1.1",
+                "doctrine/phpcr-odm": "~1.1",
+                "knplabs/knp-menu-bundle": "~1.1",
                 "php": ">=5.3.3",
-                "symfony-cmf/core-bundle": ">=1.1.0,<1.2-dev",
+                "symfony-cmf/core-bundle": "~1.1",
                 "symfony/framework-bundle": "~2.3"
             },
             "require-dev": {
-                "sonata-project/doctrine-phpcr-admin-bundle": "1.1.*",
-                "symfony-cmf/routing-bundle": "1.2.*",
-                "symfony-cmf/testing": "1.1.*",
-                "symfony/monolog-bundle": "2.3.*"
+                "sonata-project/doctrine-phpcr-admin-bundle": "~1.1",
+                "symfony-cmf/routing-bundle": "~1.2",
+                "symfony-cmf/testing": "~1.1",
+                "symfony/monolog-bundle": "~2.3"
             },
             "suggest": {
+                "burgov/key-value-form-bundle": "if you want to edit the advanced options on the node with the menu options extension",
                 "sonata-project/doctrine-phpcr-admin-bundle": "if you want to have editing capabilities"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Symfony\\Cmf\\Bundle\\MenuBundle": ""
+                "psr-4": {
+                    "Symfony\\Cmf\\Bundle\\MenuBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2326,7 +2379,7 @@
                 "Symfony CMF",
                 "menu"
             ],
-            "time": "2014-05-14 11:21:46"
+            "time": "2014-10-21 09:43:10"
         },
         {
             "name": "symfony-cmf/routing",
