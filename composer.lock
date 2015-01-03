@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c4b01f5aa73f6d82427eda7e53494f1d",
+    "hash": "42935799be94f200a77eab0b8d1a17f0",
     "packages": [
         {
             "name": "aferrandini/urlizer",
@@ -52,22 +52,23 @@
         },
         {
             "name": "concerto-cms/admin-bundle",
-            "version": "dev-master",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/concerto-cms/AdminBundle.git",
-                "reference": "78dd8f1dd5d3a5f0251cbb7c99a44bde0019c03d"
+                "reference": "4e4729410baa904876181491f27d72c4c134ebf9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concerto-cms/AdminBundle/zipball/78dd8f1dd5d3a5f0251cbb7c99a44bde0019c03d",
-                "reference": "78dd8f1dd5d3a5f0251cbb7c99a44bde0019c03d",
+                "url": "https://api.github.com/repos/concerto-cms/AdminBundle/zipball/4e4729410baa904876181491f27d72c4c134ebf9",
+                "reference": "4e4729410baa904876181491f27d72c4c134ebf9",
                 "shasum": ""
             },
             "require": {
-                "concerto-cms/core-bundle": "dev-refactor",
+                "concerto-cms/core-bundle": "~0.1",
                 "friendsofsymfony/jsrouting-bundle": "1.5.3",
                 "helios-ag/fm-elfinder-bundle": "1.x",
+                "knplabs/knp-menu-bundle": "~1.1",
                 "liip/imagine-bundle": "~0.12"
             },
             "type": "library",
@@ -84,20 +85,20 @@
                 }
             ],
             "description": "Backend GUI for the Concerto CMS software",
-            "time": "2015-01-03 12:21:57"
+            "time": "2015-01-03 20:11:35"
         },
         {
             "name": "concerto-cms/core-bundle",
-            "version": "dev-refactor",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/concerto-cms/CoreBundle.git",
-                "reference": "d7578630c7210841680017e72e8271bd2eddd443"
+                "reference": "60234ca939a31272be85870e9f467eec1d0812b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concerto-cms/CoreBundle/zipball/d7578630c7210841680017e72e8271bd2eddd443",
-                "reference": "d7578630c7210841680017e72e8271bd2eddd443",
+                "url": "https://api.github.com/repos/concerto-cms/CoreBundle/zipball/60234ca939a31272be85870e9f467eec1d0812b4",
+                "reference": "60234ca939a31272be85870e9f467eec1d0812b4",
                 "shasum": ""
             },
             "require": {
@@ -130,10 +131,10 @@
             ],
             "description": "Core features for the Concerto CMS software",
             "support": {
-                "source": "https://github.com/concerto-cms/CoreBundle/tree/refactor",
+                "source": "https://github.com/concerto-cms/CoreBundle/tree/0.1.0",
                 "issues": "https://github.com/concerto-cms/CoreBundle/issues"
             },
-            "time": "2015-01-03 18:04:01"
+            "time": "2015-01-03 20:07:06"
         },
         {
             "name": "doctrine/annotations",
@@ -2952,11 +2953,8 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "RC",
-    "stability-flags": {
-        "concerto-cms/core-bundle": 20,
-        "concerto-cms/admin-bundle": 20
-    },
+    "minimum-stability": "stable",
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
