@@ -30,3 +30,8 @@ cmf_media_file:
 cmf_media_image:
     resource: "@CmfMediaBundle/Resources/config/routing/image.xml"
 
+logout:
+    path:   %webapp_path%/Account/Logout
+
+login_check:
+    path:   %webapp_path%/Account/CheckLogin

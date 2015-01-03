@@ -17,3 +17,9 @@ parameters:
 
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    security_credentials:
+        admin:
+            password: admin
+            roles: ROLE_ADMIN
+    security_enabled:   true

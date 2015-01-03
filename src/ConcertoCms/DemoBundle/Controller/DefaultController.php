@@ -9,8 +9,8 @@ class DefaultController extends Controller
 {
     public function splashAction()
     {
-        $cm = $this->get('concerto_cms_core.content');
-        $route = $cm->getRoute("/en");
+        $cm = $this->get('concerto_cms_core.routes.service.routes_manager');
+        $route = $cm->getByUrl("/en");
         $router = $this->get('router');
         $uri = $router->generate($route);
         return new RedirectResponse($uri, 301);
