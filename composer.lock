@@ -56,12 +56,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concerto-cms/AdminBundle.git",
-                "reference": "cb712474f6b0ab3daac6e975dfda1114451dc26f"
+                "reference": "78dd8f1dd5d3a5f0251cbb7c99a44bde0019c03d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concerto-cms/AdminBundle/zipball/cb712474f6b0ab3daac6e975dfda1114451dc26f",
-                "reference": "cb712474f6b0ab3daac6e975dfda1114451dc26f",
+                "url": "https://api.github.com/repos/concerto-cms/AdminBundle/zipball/78dd8f1dd5d3a5f0251cbb7c99a44bde0019c03d",
+                "reference": "78dd8f1dd5d3a5f0251cbb7c99a44bde0019c03d",
                 "shasum": ""
             },
             "require": {
@@ -84,7 +84,7 @@
                 }
             ],
             "description": "Backend GUI for the Concerto CMS software",
-            "time": "2014-12-30 19:36:11"
+            "time": "2015-01-03 12:21:57"
         },
         {
             "name": "concerto-cms/core-bundle",
@@ -92,12 +92,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concerto-cms/CoreBundle.git",
-                "reference": "86787d6482ae04a4cf73a7f976ca90b664cd59be"
+                "reference": "235127f91276464e54c9ee3496f042c461f3844a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concerto-cms/CoreBundle/zipball/86787d6482ae04a4cf73a7f976ca90b664cd59be",
-                "reference": "86787d6482ae04a4cf73a7f976ca90b664cd59be",
+                "url": "https://api.github.com/repos/concerto-cms/CoreBundle/zipball/235127f91276464e54c9ee3496f042c461f3844a",
+                "reference": "235127f91276464e54c9ee3496f042c461f3844a",
                 "shasum": ""
             },
             "require": {
@@ -132,7 +132,7 @@
                 "source": "https://github.com/concerto-cms/CoreBundle/tree/refactor",
                 "issues": "https://github.com/concerto-cms/CoreBundle/issues"
             },
-            "time": "2014-12-30 19:36:11"
+            "time": "2015-01-03 12:21:57"
         },
         {
             "name": "doctrine/annotations",
