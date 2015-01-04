@@ -22,6 +22,11 @@ security:
                 password_parameter: password
 #            http_basic:
 #                realm: "CMS"
+            remember_me:
+                key:      "%secret%"
+                lifetime: 31536000 # 365 days in seconds
+                path:     /
+                domain:   ~ # Defaults to the current domain from $_SERVER
 
             logout:
                 path:   %webapp_path%/Account/Logout
