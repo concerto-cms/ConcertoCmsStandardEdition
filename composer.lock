@@ -52,16 +52,16 @@
         },
         {
             "name": "concerto-cms/admin-bundle",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/concerto-cms/AdminBundle.git",
-                "reference": "4e4729410baa904876181491f27d72c4c134ebf9"
+                "reference": "cf48df5dcbb7acee9d84308fce299caa39e4306f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concerto-cms/AdminBundle/zipball/4e4729410baa904876181491f27d72c4c134ebf9",
-                "reference": "4e4729410baa904876181491f27d72c4c134ebf9",
+                "url": "https://api.github.com/repos/concerto-cms/AdminBundle/zipball/cf48df5dcbb7acee9d84308fce299caa39e4306f",
+                "reference": "cf48df5dcbb7acee9d84308fce299caa39e4306f",
                 "shasum": ""
             },
             "require": {
@@ -85,7 +85,7 @@
                 }
             ],
             "description": "Backend GUI for the Concerto CMS software",
-            "time": "2015-01-03 20:11:35"
+            "time": "2015-01-04 20:47:09"
         },
         {
             "name": "concerto-cms/core-bundle",
@@ -2571,16 +2571,16 @@
         },
         {
             "name": "symfony/monolog-bundle",
-            "version": "v2.7.0",
+            "version": "v2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/MonologBundle.git",
-                "reference": "e8f71c91a3784f3fa1a75fb1f7f4d4826c5f2773"
+                "reference": "9320b6863404c70ebe111e9040dab96f251de7ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/MonologBundle/zipball/e8f71c91a3784f3fa1a75fb1f7f4d4826c5f2773",
-                "reference": "e8f71c91a3784f3fa1a75fb1f7f4d4826c5f2773",
+                "url": "https://api.github.com/repos/symfony/MonologBundle/zipball/9320b6863404c70ebe111e9040dab96f251de7ac",
+                "reference": "9320b6863404c70ebe111e9040dab96f251de7ac",
                 "shasum": ""
             },
             "require": {
@@ -2626,7 +2626,7 @@
                 "log",
                 "logging"
             ],
-            "time": "2014-12-28 16:37:56"
+            "time": "2015-01-04 20:21:17"
         },
         {
             "name": "symfony/swiftmailer-bundle",
