@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "42935799be94f200a77eab0b8d1a17f0",
+    "hash": "d07b188a19b971b33e8c6ac0124e9e4d",
     "packages": [
         {
             "name": "aferrandini/urlizer",
@@ -52,16 +52,16 @@
         },
         {
             "name": "concerto-cms/admin-bundle",
-            "version": "0.1.1",
+            "version": "0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/concerto-cms/AdminBundle.git",
-                "reference": "cf48df5dcbb7acee9d84308fce299caa39e4306f"
+                "reference": "c1d7d0823140a838b2d5ffe718adaa885dd01462"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concerto-cms/AdminBundle/zipball/cf48df5dcbb7acee9d84308fce299caa39e4306f",
-                "reference": "cf48df5dcbb7acee9d84308fce299caa39e4306f",
+                "url": "https://api.github.com/repos/concerto-cms/AdminBundle/zipball/c1d7d0823140a838b2d5ffe718adaa885dd01462",
+                "reference": "c1d7d0823140a838b2d5ffe718adaa885dd01462",
                 "shasum": ""
             },
             "require": {
@@ -85,20 +85,20 @@
                 }
             ],
             "description": "Backend GUI for the Concerto CMS software",
-            "time": "2015-01-04 20:47:09"
+            "time": "2015-01-05 07:53:46"
         },
         {
             "name": "concerto-cms/core-bundle",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/concerto-cms/CoreBundle.git",
-                "reference": "60234ca939a31272be85870e9f467eec1d0812b4"
+                "reference": "10c9e7f5ad00a60d900ec51396fca10d0d944dae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concerto-cms/CoreBundle/zipball/60234ca939a31272be85870e9f467eec1d0812b4",
-                "reference": "60234ca939a31272be85870e9f467eec1d0812b4",
+                "url": "https://api.github.com/repos/concerto-cms/CoreBundle/zipball/10c9e7f5ad00a60d900ec51396fca10d0d944dae",
+                "reference": "10c9e7f5ad00a60d900ec51396fca10d0d944dae",
                 "shasum": ""
             },
             "require": {
@@ -131,10 +131,10 @@
             ],
             "description": "Core features for the Concerto CMS software",
             "support": {
-                "source": "https://github.com/concerto-cms/CoreBundle/tree/0.1.0",
+                "source": "https://github.com/concerto-cms/CoreBundle/tree/0.1.1",
                 "issues": "https://github.com/concerto-cms/CoreBundle/issues"
             },
-            "time": "2015-01-03 20:07:06"
+            "time": "2015-01-06 20:14:37"
         },
         {
             "name": "doctrine/annotations",
@@ -832,22 +832,27 @@
         },
         {
             "name": "doctrine/lexer",
-            "version": "v1.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
-                "reference": "2f708a85bb3aab5d99dab8be435abd73e0b18acb"
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/2f708a85bb3aab5d99dab8be435abd73e0b18acb",
-                "reference": "2f708a85bb3aab5d99dab8be435abd73e0b18acb",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Doctrine\\Common\\Lexer\\": "lib/"
@@ -859,19 +864,16 @@
             ],
             "authors": [
                 {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
                     "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers.",
@@ -880,7 +882,7 @@
                 "lexer",
                 "parser"
             ],
-            "time": "2013-01-12 18:59:04"
+            "time": "2014-09-09 13:34:57"
         },
         {
             "name": "doctrine/orm",
@@ -2956,7 +2958,6 @@
     "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
-    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.3"
     },
