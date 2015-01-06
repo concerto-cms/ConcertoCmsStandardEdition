@@ -76,6 +76,8 @@ doctrine_phpcr:
        backend:
           type: doctrinedbal
           connection: default
+          parameters:
+             jackalope.check_login_on_server: false
        workspace: default
        username: admin
        password: admin
