@@ -43,20 +43,6 @@
     "config": {
         "bin-dir": "bin"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/concerto-cms/CoreBundle"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/concerto-cms/SecurityBundle"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/concerto-cms/NewsBundle"
-        }
-    ],
     "extra": {
         "symfony-app-dir": "app",
         "symfony-web-dir": "web",
