@@ -31,6 +31,7 @@ class AppKernel extends Kernel
 //            new ConcertoCms\SecurityBundle\ConcertoCmsSecurityBundle(),
             new ConcertoCms\DemoBundle\ConcertoCmsDemoBundle(),
             new ConcertoCms\AdminBundle\ConcertoCmsAdminBundle(),
+            new AppVentus\AsseticInjectorBundle\AvAsseticInjectorBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
