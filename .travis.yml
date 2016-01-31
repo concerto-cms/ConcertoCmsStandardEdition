@@ -2,12 +2,11 @@ language: php
 
 php:
   - 5.5
-
-before_install:
-  - pear install PHP_CodeSniffer
+  - 5.6
+  - 7
 
 before_script:
   - phpenv rehash
 
 script:
-  - phpcs --report=summary --extensions=php --standard=PSR2 ./src
+  - ./bin/phpcs --report=summary --extensions=php --standard=PSR2 ./src

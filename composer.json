@@ -22,6 +22,9 @@
         "concerto-cms/admin-bundle": "~0.2",
         "appventus/assetic-injector-bundle": "dev-master"
     },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "2.*"
+    },
     "scripts": {
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
